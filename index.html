@@ -40,6 +40,57 @@
   line-height: 1.8;
   margin: 0;
 }
+  
+/* General website refinements */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+.wrap {
+  width: min(1100px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+}
+
+.card {
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(16,35,62,0.10);
+}
+
+/* Improve readability on smaller screens */
+@media (max-width: 768px) {
+  .wrap {
+    width: 92%;
+  }
+
+  section h2 {
+    font-size: 1.65rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <section id="highlights" style="background:#10233d;color:white;padding:55px 20px">
   <div style="max-width:1100px;margin:auto">
