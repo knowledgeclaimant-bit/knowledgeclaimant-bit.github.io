@@ -3,7 +3,7 @@
 :root{--navy:#10233d;--blue:#2563a6;--gold:#c7a56b;--bg:#f5f7fa;--ink:#203044;--muted:#607084}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);line-height:1.65;background:var(--bg)}a{color:var(--blue)}header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5}nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 24px;gap:18px;flex-wrap:wrap}nav strong{font-size:1.1rem}nav .links{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-size:.9rem}nav a:hover{text-decoration:underline}.hero{background:linear-gradient(115deg,#10233d,#1b4772);color:white;padding:100px 24px 90px}.wrap{max-width:1100px;margin:auto}.eyebrow{color:#e7c88c;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:.8rem}.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.1;margin:15px 0}.hero p{max-width:730px;font-size:1.15rem;color:#dce6f3}.btn{display:inline-block;background:var(--gold);color:#14233a;text-decoration:none;padding:12px 20px;border-radius:7px;font-weight:700;margin:12px 12px 0 0}.btn.alt{background:transparent;border:1px solid #a9c3dc;color:#fff}main section{padding:66px 24px}h2{font-size:2rem;color:var(--navy);margin:0 0 14px}h3{margin-top:0;color:var(--navy)}.lead{color:var(--muted);max-width:760px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.card{background:white;padding:25px;border-radius:12px;border:1px solid #e2e8f0;box-shadow:0 5px 20px #132d4b08}.card p{margin-bottom:0}.light{background:white}.timeline{border-left:3px solid var(--gold);padding-left:25px}.item{margin-bottom:28px}.item small{color:var(--blue);font-weight:700}.tags{display:flex;flex-wrap:wrap;gap:10px}.tag{background:#e6edf5;border-radius:30px;padding:8px 13px;font-size:.9rem}.notice{border-left:4px solid var(--gold);padding:15px 20px;background:#fff;margin-top:25px}footer{background:var(--navy);color:#d6e1ef;text-align:center;padding:28px 20px}footer a{color:white}@media(max-width:600px){nav .links{gap:11px}.hero{padding:65px 24px}main section{padding:48px 20px}}
 </style></head><body>
 <header><nav><strong>Iftikhar Hussain</strong><div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#research">Research</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a></div></nav></header>
-<div class="hero"><div class="wrap"><div class="eyebrow">Professional & Academic Portfolio</div><h1>Iftikhar Hussain</h1><p>Security Leadership · Human Resource Management · Research · Operational Resilience</p><p>Retired Pakistan Army Major and corporate security professional with extensive experience spanning military service, critical infrastructure protection, personnel administration, and academic research.</p><a class="btn" href="#experience">Explore Experience</a><a class="btn alt" href="#contact">Get in Touch</a></div></div>
+<div class="hero"><div class="wrap"><div class="eyebrow">Professional & Academic Portfolio</div><h1>Iftikhar Hussain</h1><p>Security Leadership · Human Resource Management · Research · Operational Resilience</p><p>Retired Pakistan Army Major and corporate security professional with extensive experience spanning military service, critical infrastructure protection, personnel administration, and academic research.</p><a class="btn" href="#experience">Explore Experience</a><a class="btn alt" href="#contact"> Get in Touch</a><a class="btn cv-professional" href="Professional_CV.pdf" download>Download Professional CV</a><a class="btn cv-academic" href="Academic_CV.pdf" download>Download Academic CV</a></div></div>
 <main><section id="about"><div class="wrap"><h2>About</h2><p class="lead">Bringing together field leadership, organizational management, and evidence-based research.</p><div class="grid"><div class="card"><h3>Security & Risk</h3><p>Leadership in security operations, stakeholder coordination, protection of critical infrastructure, and field preparedness.</p></div><div class="card"><h3>People & Organizations</h3><p>Military personnel administration and doctoral-level expertise in human resource management.</p></div><div class="card"><h3>Research & Learning</h3><p>Research interests include recruitment equity, knowledge capture, social media, and organizational competitive advantage.</p></div></div></div></section>
 
 <style>
@@ -166,6 +166,27 @@ nav .links a:focus-visible {
   nav .links a {
     font-size: 0.78rem;
   }
+}
+  
+/* Professional and Academic CV buttons */
+.hero .cv-professional {
+  background: #c7a56b;
+  color: #10233e;
+  border: 1px solid #c7a56b;
+}
+
+.hero .cv-academic {
+  background: #167d84;
+  color: #ffffff;
+  border: 1px solid #167d84;
+}
+
+.hero .cv-professional:hover {
+  background: #dfbf85;
+}
+
+.hero .cv-academic:hover {
+  background: #2099a0;
 }
 </style>
 <section id="highlights" style="background:#10233d;color:white;padding:55px 20px">
