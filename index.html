@@ -369,6 +369,58 @@ nav .links a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+ 
+/* Contact and Connect section */
+
+#contact .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+#contact .contact-card {
+  background: #ffffff;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #c7a56b;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(16,35,62,0.05);
+}
+
+#contact .contact-card h3 {
+  color: #10233e;
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+#contact .contact-card p {
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#contact .contact-card a {
+  color: #a67c38;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#contact .contact-card a:hover {
+  color: #167d84;
+}
+
+#contact .contact-location {
+  margin-top: 30px;
+  color: #607084;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  #contact .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <section id="highlights" style="background:#10233d;color:white;padding:55px 20px">
   <div style="max-width:1100px;margin:auto">
@@ -612,4 +664,62 @@ nav .links a:focus-visible {
   </div>
 </section>
 
-<section id="contact" class="light"><div class="wrap"><h2>Contact & Connect</h2><p>For professional collaboration, research opportunities, consulting discussions, or relevant leadership roles:</p><p><strong>Email:</strong> <a href="mailto:knowledgeclaimant@gmail.com">knowledgeclaimant@gmail.com</a></p><p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/iftikhar-hussain-68b30bb7/" target="_blank" rel="noopener noreferrer">View professional profile</a></p><p class="lead">Based in Pakistan · Open to relevant international opportunities</p></div></section></main><footer>© <span id="year">2026</span> Iftikhar Hussain · Professional & Academic Portfolio</footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+
+<section id="contact" class="light">
+  <div class="wrap">
+    <h2>Contact & Connect</h2>
+
+    <p class="lead">
+      Open to international leadership opportunities,
+      academic collaboration, research partnerships,
+      and professional engagement.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <h3>Professional Enquiries</h3>
+        <p>
+          For employment opportunities, consulting,
+          security leadership, and organizational
+          management discussions.
+        </p>
+        <a href="mailto:knowledgeclaimant@gmail.com">
+          Send an Email
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Professional Networking</h3>
+        <p>
+          Connect for professional networking,
+          international opportunities, and
+          industry collaboration.
+        </p>
+        <a href="https://www.linkedin.com/in/iftikhar-hussain-68b30bb7/"
+           target="_blank"
+           rel="noopener noreferrer">
+          View LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Academic Collaboration</h3>
+        <p>
+          Interested in research partnerships,
+          joint publications, and international
+          postdoctoral opportunities.
+        </p>
+        <a href="mailto:knowledgeclaimant@gmail.com?subject=Academic%20Collaboration">
+          Discuss Research Collaboration
+        </a>
+      </div>
+
+    </div>
+
+    <p class="contact-location">
+      Based in Pakistan | Open to international opportunities
+    </p>
+  </div>
+</section>
+
